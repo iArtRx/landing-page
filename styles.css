@@ -1,18 +1,22 @@
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: #1F2937;
+* {
+    margin: 0;
+    padding: 0;
+  
 }
+
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 16px 64px;
+    align-items: center;
+    background-color: #1F2937;
+    
 }
 
 .logo {
     font-size: 24px;
     color: #F9FaF8;
+
 }
 
 .header-links {
@@ -21,7 +25,7 @@ header {
     gap: 16px;
 }
 
-a {
+a, .hero p {
     font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
@@ -31,33 +35,64 @@ ul {
     list-style: none;
 }
 
-.information {
-    background-color: white;
+header, .hero {
+    padding: 16px 96px;
 }
 
-#intro-title {
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F2937;
+    gap: 16px;
+}
+
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}    
+
+
+
+.hero h2 {
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: 900;
+    color:#F9FAF8;
+}
+
+button {
+    background-color: #3882F6;
     color: #F9FAF8;
+    border-style: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+
 }
 
-#intro-text {
-    font-size: 18px;
-    color: #E5E7EB;
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8;
+    background-color: #747577;
+    width: 50%;
+    flex-shrink: 0;
+    padding: 2px;
+
+
 }
 
-h2 {
-    font-size: 36px;
-    font-weight: extra-bold;
-    color: #1F2937
-}
 
-.quote {
-    background-color: #E5E7EB;
-    font-size: 36px;
-    font-weight: light;
-    font-style: italic;
-    color: #1F2937;
-    flex: 1;
-}
+
+
+
+
+
+
+
+
 
